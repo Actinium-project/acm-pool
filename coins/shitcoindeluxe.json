@@ -1,0 +1,7 @@
+{
+    "name": "ShitcoinDeLuxe",
+    "symbol": "SHT",
+    "algorithm": "scrypt",
+    "peerMagic": "fac1b7d7",
+    "peerMagicTestnet": "fad2c7f7"
+}
