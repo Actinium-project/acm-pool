@@ -71,7 +71,7 @@ function SetupForPool(logger, poolOptions, setupFinished){
                 }
                 else if (!result.response || !result.response.ismine) {
                             daemon.cmd('getaddressinfo', [poolOptions.address], function(result) {
-                        /*if (result.error){
+                        if (result.error){
                             logger.error(logSystem, logComponent, 'Error with payment processing daemon, getaddressinfo failed ... ' + JSON.stringify(result.error));
                             callback(true);
                         }
@@ -83,8 +83,7 @@ function SetupForPool(logger, poolOptions, setupFinished){
                         }
                         else{
                             callback()
-                        }*/
-						callback();
+                        }
                     }, true);
                 }
                 else{
